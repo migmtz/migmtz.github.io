@@ -1,0 +1,370 @@
+/*référentiel, rien d'utile*/
+.Palette {
+    color: #879499;
+    color: #3e4749;
+    color: #faa000;
+    color: #ff4b01;
+}
+
+/*Les icônes fonctionnes grâce à un système de classe
+je le contourne en utilisant une ID à la place.
+j'aurai pu ajouter une nouvelle classe, 
+mais je veux que ça reste lisible*/
+#icon {
+    width: 20px;
+}
+
+.orcid-icon {
+    width: 16px;
+    height: 16px;
+    filter: invert(24%) sepia(2%) saturate(2829%) hue-rotate(152deg) brightness(94%) contrast(85%);
+}
+
+/* Masque pour toute la partie visible (body) */
+body,
+html {
+    font-family: 'Lato', sans-serif;
+    color: #3e4749;
+    margin: 0;
+    padding: 0;
+}
+
+.blockPadding {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.block {
+    display: flex;
+}
+
+.item {
+    width: 50%;
+    margin: 2%;
+}
+
+.itemLeft {
+    width: 66%;
+    margin: 2%;
+}
+
+.itemRight {
+    width: 34%;
+    margin: 2%;
+}
+
+.itemRightImage {
+    width:34%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.itemLeftPortrait {
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bio {
+    width : 80%;
+    margin: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.whiteZone {
+    background-color: rgb(255, 255, 255);
+}
+
+.greyZone {
+    background-color: #8794992a;
+    background-color: #8794991d;
+
+}
+
+.textRight {
+    text-align: right;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.subTitle {
+    font-weight: 600;
+    color: #ff4b01;
+}
+
+.imgDesc {
+    font-weight: 100;
+    color: #879499;
+    text-align: center;
+}
+
+.titleSeparator {
+    width: 25%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px ;
+    border-bottom-color:#3e474980;
+}
+
+.imgExemple {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.imgRight {
+    height: auto;
+    width: 100%;
+    border-radius: 3%;
+}
+
+/* modification du style par défaut des URL */
+a[href^="http"] {
+    color: #faa000;
+    text-decoration: none;
+}
+
+/* on retire le style par défaut des boutons */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.btn1, .btn2, .btn3 {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn1 {
+    background-color: white;
+    border-color: #ff4b01;
+    color: #ff4b01;
+
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+
+    height: 20px;
+    width: 60px;
+
+    font-size: small;
+}
+
+.btn1:hover {
+    background-color: #ff4b01;
+    border-color: #ff4b01;
+    color: white;
+
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+
+    height: 20px;
+    width: 60px;
+
+    font-size: small;
+}
+
+.btn2 {
+    background-color: #ff4b01;;
+    border-color: #ff4b01;;
+    color: white;
+
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+
+    height: 20px;
+    width: 60px;
+
+    font-size: small;
+}
+
+.btn2:hover {
+    background-color: white;
+    border-color:  #ff4b01;
+    color:  #ff4b01;;
+
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+
+    height: 20px;
+    width: 60px;
+
+    font-size: small;
+}
+
+a.btn3 {
+    background-color: #3e4749;
+    border-color: #3e4749;
+    color: white;
+
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+
+    height: 16px;
+    width: 60px;
+
+    font-size: small;
+    display: inline-block;
+    text-align: center;
+}
+
+a.btn3:hover {
+    background-color:#8794992a;
+    border-color:#3e4749;
+    color: #3e4749;
+
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+
+    height: 16px;
+    width: 60px;
+
+    font-size: small;
+    display: inline-block;
+    text-align: center;
+}
+
+.header {
+    display: block;
+}
+
+.responsiveHeader {
+    display: none;
+}
+
+.footer {
+    display: block;
+}
+
+.responsiveFooter {
+    display: none;
+}
+
+nav#menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+nav#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav#menu ul li {
+    margin: 10px 0;
+}
+
+nav#menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav#menu ul li a:hover {
+    background-color: #575757;
+}
+
+.section {
+    margin-left: 200px; /* espace pour le menu latéral */
+} 
+
+/* Pour les écrans étroits (comme les téléphones) */
+@media screen and (max-width: 800px) {
+    nav#menu{
+        display: none;
+    }
+
+    .section {
+        margin-left: 0;
+    }
+
+    .block {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: block;
+    }
+
+    .item {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .itemLeft {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .itemRight {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .itemRightImage {
+        width:100%;
+        margin: 0%;
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imgRight {
+        height: auto;
+        width: 80%;
+        border-radius: 3%;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .responsiveHeader {
+        display: block;
+        margin-top: 5%;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .responsiveFooter {
+        display: block;
+        margin-top: 5%;
+    }
+}

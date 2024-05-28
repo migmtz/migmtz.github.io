@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel MH's research website</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--font-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!--github logo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--script pour MathJax-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<style>
+</style>
+
+<script>
+</script>
+
+<body>
+    <nav id="menu">
+        <ul>
+            <!--<H1 style="margin-left: 10px; color: white;">Menu</H1>-->
+            <br>
+            <li><a style="padding-left :20px;"  href="#bio">Bio</a></li>
+            <li><a style="padding-left :20px;"  href="#research">Research</a></li>
+            <li><a style="padding-left :20px;"  href="#talks">Talks & Activities</a></li>
+            <li><a style="padding-left :20px;"  href="#teaching">Teaching</a></li>
+            <!--<li><a href="#misc">Miscellaneous</a></li>-->
+        </ul>
+    </nav>
+    <!--
+        Burger menu en html/css "display:none;" sur laptop,
+        "display:block" sur téléphone.
+    -->
+
+    <!-- Top Page -->
+    <div class="section">
+        <!-- Header -->
+        <div class="header">
+            <div class="block blockPadding">
+                <div class="item textLeft itemLeftPortrait">
+                    <img src="miguel.jpg" class="imgExemple">
+                </div>
+
+                <div class="item textCenter">
+                    <h1>Miguel Martinez Herrera<h1>
+                    <h3>3rd year Phd Student in Statistics</h3>                  
+                </div>
+
+                <div class="item textRight">
+                    <p>Paris, France</p>
+                    <a href="https://www.example.com">
+                        Mail
+                    </a><i id="icon" class="fa fa-envelope"></i>
+                    <br>
+                    <a href="https://orcid.org/0000-0001-7844-4064">
+                        Orcid            
+                    </a><svg class="orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="margin-right :0px; margin-left:4px;"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
+                    <br>
+                    <a href="https://github.com/migmtz">
+                        Github 
+                    </a><i id="icon" class="fa fa-github"></i>
+                </div>
+            </div>
+            <div class="textCenter">
+                <p>at Laboratoire de Probabilités, Statistique et Modélisation (LPSM),
+                    <br>
+                    Sorbonne Université.
+                </p>
+            </div>
+        </div>
+
+        <!-- Header -->
+
+        <!-- Header, SMARTPHONE (ajouter le style au css) -->
+        <div class="responsiveHeader">
+                <div class="block blockPadding" style="display: flex;">
+                    <div class="textLeft" style="width:50%;">
+                        <img src="miguel.jpg" class="imgExemple">
+                    </div>
+
+                    <div class="item textRight">
+                        <p>Paris, France</p>
+                        <a href="https://www.example.com">
+                            Mail
+                        </a><i id="icon" class="fa fa-envelope"></i>
+                        <br>
+                        <a href="https://orcid.org/0000-0001-7844-4064">
+                            Orcid            
+                        </a><svg class="orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="margin-right :0px; margin-left:4px;"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
+                        <br>
+                        <a href="https://github.com/migmtz">
+                            Github 
+                        </a><i id="icon" class="fa fa-github"></i>
+                    </div>
+                </div>
+
+            <div class="textCenter">
+                <h2>Miguel Martinez Herrera<h1>
+                <h3>3rd year Phd Student</h3>
+                <p>
+                   at Laboratoire de Probabilités, Statistique et Modélisation (LPSM),
+                   <br>
+                   Sorbonne Université.
+                </p>
+            </div>
+        </div>
+        <!-- header, SMARTPHONE -->
+
+        <!-- Module DE BIO : full text + séparators -->
+        <div id="bio">                
+            <div class="block blockPadding" style="text-align:center;">
+                <div class="bio">
+                <p class="subTitle">Who am I, you ask?</p>
+                <div class="titleSeparator" style="margin:auto;"></div>
+                <p>
+                    I am currently a third-year PhD student in the department of statistics (LPSM) at Sorbonne Université, 
+                    under the supervision of <a href="http://anna.biogeek.land">Anna Bonnet</a> (LPSM) and <a href="https://perso.lpsm.paris/~msangnier/">Maxime Sangnier</a> (LPSM).
+                    <br><br>
+                    My PhD is part of the doctoral program of the Sorbonne Center for Artificial Intelligence (<a href="https://scai.sorbonne-universite.fr">SCAI</a>).
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <!-- greyZone : la marge de la page n'est pas prise en compte.
+        idée : la marge est propre à chaque bloc, meilleur responsive ?-->
+        <!-- Module DE LA PAGE-->
+        <div id="research">                
+            <div class="block blockPadding greyZone">
+                <div class="itemLeft">
+                <h2 class="title">Research</h2>
+                    <div class="titleSeparator"></div>
+                    <p class="subTitle">Preprints</p>
+                    <ul>
+                    <li>
+                        Spectral analysis for noisy Hawkes processes inference, A. Bonnet, F. Cheysson, M. Martinez Herrera, M. Sangnier, <i>Submitted</i>, 2024. Github
+                        <!--<button class="btn2">abstract</button>-->
+                        <br>
+                        <a href="https://hal.science/hal-04580719v1/document" class="btn3" role="button">Pdf</a>
+                        <a href="https://github.com/migmtz/noisy-hawkes-process" class="btn3" role="button">Github</a>
+                    </li>
+                    </ul>
+                    <p class="subTitle">Published papers</p>
+                    <ul>
+                    <li>
+                        "Inference of multivariate exponential Hawkes processes with inhibition and application to neuronal activity", A. Bonnet, M. Martinez Herrera, M. Sangnier, <i>Statistics and Computing</i>, 2023. Github                    
+                        <br>
+                        <a href="https://hal.science/hal-03652497/document" class="btn3" role="button">Pdf</a>
+                        <a href="https://github.com/migmtz/multivariate-hawkes-inhibition" class="btn3" role="button">Github</a>
+                    </li>
+                    <br>
+                    <li>
+                        Maximum Likelihood Estimation for Hawkes Processes with self-excitation or inhibition, A. Bonnet, M. Martinez Herrera, M. Sangnier, <i>Statistics and Probability Letters</i>, 2021. Github
+                        <br>
+                        <a href="https://hal.sorbonne-universite.fr/hal-03161843/document" class="btn3" role="button">Pdf</a>
+                        <a href="https://github.com/migmtz/hawkes-inhibition-expon" class="btn3" role="button">Github</a>
+                    </li>
+                    </ul>
+                </div>
+            
+
+                <div class="itemRightImage">
+                    <img src="branching_and_cluster.jpg" class="imgRight">
+                    <p class="imgDesc">Structures of branching and clustering for Hawkes processes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="talks">    
+            <div class="block blockPadding">
+                <div class="itemLeft">
+                    <h2 class="title">Talks</h2>
+                    <div class="titleSeparator"></div>
+                    <ul>
+                        <li>
+                        <b>55e Journées de Statistique (JdS)</b>, Bordeaux, France, Mai 2024.
+                        </li>
+                        <li>
+                        <b>54e Journées de Statistique (JdS)</b>, Brussels, Belgium, July 2023.
+                        </li>
+                        <li>
+                        <b>PhD students seminar at LPSM</b>, Sorbonne Université, Paris, France, November 2022.
+                        </li>
+                        <li>
+                        <b>Lille Days in Point Processes and Stochastic Geometry</b>, Lille, France, Octobre 2022.
+                        </li>
+                        <li>
+                        <b>PhD workshop on Artificial Intelligence</b>, Sorbonne Université, Paris, France, Octobre 2022.
+                        </li>
+                        <li>
+                        (Invited) <b>SIAM Annual Meeting (AN22)</b>, Pittsburgh, Pennsylvania, U.S.A., July 2022.
+                        </li>
+                        <li>
+                        <b>Rencontres des Jeunes Statisticien.ne.s (RJS)</b>, Porquerolles, France, April 2022.
+                        </li>
+                        <li>
+                        <b>SCAI doctoral Workshop</b>, Sorbonne Université, Paris, France, Octobre 2021.
+                        </li>
+                        <li>
+                        <b>PhD students seminar at LPSM</b>, Sorbonne Université, Paris, France, Octobre 2021.
+                    </ul>
+                </div>
+
+                <div class="itemRightImage">
+                    <img src="bivariate_intensity_hawkes2.jpg" class="imgRight";style="vertical-align: middle;">
+                    <p class="imgDesc";style="vertical-align: middle;">Intensity of bivariate Hawkes process with exciting and inhibiting interactions.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="activities">    
+            <div class="block blockPadding greyZone">
+                <div class="itemLeft">
+                    <h2 class="title">Activities</h2>
+                    <div class="titleSeparator"></div>
+                <ul>
+                    <li>
+                        Representative of PhD students at graduate school (École Doctorale 386 Paris Centre), 2023-2024.
+                    </li>
+                    <li>
+                        Co-organiser of the PhD students seminar at LPSM, 2022-2023.
+                    </li>
+                </ul>
+                </div>
+                <!--<div class="itemRightImage">
+                    <img src="cooldownTimesMarkedMulti.jpg" class="imgRight";style="vertical-align: middle;">
+                    <p class="imgDesc";style="vertical-align: middle;">Restart times for estimation of Hawkes processes with inhibition effects.</p>
+                </div>-->
+            </div>
+        </div>
+
+        <div id="teaching">
+        <div class="block blockPadding">
+            <div class="itemLeft">
+                <h2 class="title">Teaching</h2>
+                <div class="titleSeparator"></div>
+                <p class="subTitle">Sorbonne Université</p>
+                <ul>
+                    <li>
+                        (2022-2024) Statistics course, 3rd year Bachelor’s.
+                        <br>
+                        Topics: Parametric estimation, Maximum Likelihood Estimation, 
+                    </li>
+                    <li>
+                        (2021-2023) Data Science course, 1st year Bachelor’s.
+                    </li>
+                    <li>
+                        (2021-2023) Advanced Maths course, DU RESPE (Return to higher studies Diploma for exiles).
+                    </li>
+                </ul>
+            </div>
+
+            <!--<div class="itemRightImage">
+                <img src="cooldownTimesMarkedMulti.jpg" class="imgRight";style="vertical-align: middle;">
+                <p class="imgDesc";style="vertical-align: middle;">Restart times for estimation of Hawkes processes with inhibition effects.</p>
+            </div>-->
+        </div>
+        </div>
+
+        <!-- greyZone : la marge de la page n'est pas prise en compte.
+        idée : la marge est propre à chaque bloc, meilleur responsive ?-->
+        <!--
+        <div id="misc">
+            <div class="block blockPadding">
+            <div class="item">
+                <h2 class="title">Miscellaneous</h2>
+                <div class="titleSeparator"></div>
+                <p class="subTitle">Classe "greyZone"</p>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+            </div>
+
+            <div class="item">
+                <p>
+                    Let \(X, Y\) be two independent point process. We define the superposition \(N=X+Y\) as the ordered
+                    union of points of both processes.
+                    <br>
+                    Let \(\breve M_2^N\) be the reduced second order measure of a process.
+                </p>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <div class="footer">
+            <div class="block blockPadding greyZone" style="height: 150px;">
+                <div class="item">
+                    <p class="title">Miguel<br>Martinez<br>Herrera</p>
+                    <p class="subTitle">PhD student</p>
+                </div>
+
+                <div class="item textRight">
+                    <p>Paris, France</p>
+                    <a href="https://www.example.com">
+                        Mail
+                    </a><i id="icon" class="fa fa-envelope"></i>
+                    <br>
+                    <a href="https://orcid.org/0000-0001-7844-4064">
+                        Orcid            
+                    </a><svg class="orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="margin-right :0px; margin-left:4px;"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
+                    <br>
+                    <a href="https://github.com/migmtz">
+                        Github 
+                    </a><i id="icon" class="fa fa-github"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="responsiveFooter">
+            <div class="block blockPadding greyZone" style="display: flex;">
+                <div class="textLeft" style="width:50%;">
+                    <p class="title">Miguel Martinez Herrera</p>
+                    <p class="subTitle">PhD student</p>
+                </div>
+
+                <div class="item textRight">
+                    <p>Paris, France</p>
+                    <a href="https://www.example.com">
+                        Mail
+                    </a><i id="icon" class="fa fa-envelope"></i>
+                    <br>
+                    <a href="https://orcid.org/0000-0001-7844-4064">
+                        Orcid            
+                    </a><svg class="orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="margin-right :0px; margin-left:4px;"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
+                    <br>
+                    <a href="https://github.com/migmtz">
+                        Github 
+                    </a><i id="icon" class="fa fa-github"></i>
+                </div>
+            </div>
+    </div>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Sélectionner tous les liens dans le menu
+        const links = document.querySelectorAll('#menu a');
+
+        // Parcourir chaque lien
+        links.forEach(link => {
+            // Ajouter un écouteur d'événement pour le clic
+            link.addEventListener('click', function(event) {
+                // Empêcher le comportement par défaut du lien
+                event.preventDefault();
+
+                // Récupérer l'identifiant de la section cible
+                const targetId = this.getAttribute('href').substring(1);
+
+                // Récupérer la section cible
+                const targetSection = document.getElementById(targetId);
+
+                // Calculer la position de la section cible
+                const targetPosition = targetSection.offsetTop;
+
+                // Animer le défilement jusqu'à la section cible avec une transition douce
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
