@@ -6,6 +6,13 @@
     color: #ff4b01;
 }
 
+.Palette2 {
+    color: #879499;
+    color: #3e4749;
+    color: #fd0942c8;
+    color: #FD0941;
+}
+
 /*Les icônes fonctionnes grâce à un système de classe
 je le contourne en utilisant une ID à la place.
 j'aurai pu ajouter une nouvelle classe, 
