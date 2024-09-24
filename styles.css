@@ -114,6 +114,11 @@ html {
     color: #ff4b01;
 }
 
+.credits {
+    font-weight: 500;
+    color: #879499;
+}
+
 .imgDesc {
     font-weight: 100;
     color: #879499;
