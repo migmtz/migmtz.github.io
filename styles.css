@@ -150,6 +150,11 @@ a[href^="http"] {
     text-decoration: none;
 }
 
+a[href^="mailto:"] {
+    color: #faa000;
+    text-decoration: none;
+}
+
 /* on retire le style par défaut des boutons */
 button,
 input[type="button"],
