@@ -38,6 +38,7 @@
             <!--<li><a href="#misc">Miscellaneous</a></li>-->
         </ul>
     </nav>
+    
     <!--
         Burger menu en html/css "display:none;" sur laptop,
         "display:block" sur téléphone.
@@ -147,8 +148,31 @@
                         "Spectral analysis for noisy Hawkes processes inference", A. Bonnet, F. Cheysson, M. Martinez Herrera, M. Sangnier, <i>Submitted</i>, 2024.
                         <!--<button class="btn2">abstract</button>-->
                         <br>
+                        <br>
+                        <button class="btn1" onclick="toggleAbstract('abstract1')">Abstract</button>
                         <a href="https://hal.science/hal-04580719v1/document" class="btn3" role="button">Pdf</a>
                         <a href="https://github.com/migmtz/noisy-hawkes-process" class="btn3" role="button">Github</a>
+                        <div id="abstract1" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                                Classic estimation methods for Hawkes processes rely on the assumption that observed
+                                event times are indeed a realisation of a Hawkes process, without considering any potential
+                                perturbation of the model. However, in practice, observations are often altered by some noise,
+                                the form of which depends on the context. It is then required to model the alteration mechanism in order to infer accurately such a noisy Hawkes process. While several models exist, we
+                                consider, in this work, the observations to be the indistinguishable union of event times coming
+                                from a Hawkes process and from an independent Poisson process. Since standard inference
+                                methods (such as maximum likelihood or Expectation-Maximisation) are either unworkable
+                                or numerically prohibitive in this context, we propose an estimation procedure based on the
+                                spectral analysis of second order properties of the noisy Hawkes process. Novel results include sufficient conditions for identifiability of the ensuing statistical model with exponential
+                                interaction functions for both univariate and bivariate processes. Although we mainly focus
+                                on the exponential scenario, other types of kernels are investigated and discussed. A new
+                                estimator based on maximising the spectral log-likelihood is then described, and its behaviour
+                                is numerically illustrated on synthetic data. Besides being free from knowing the source of
+                                each observed time (Hawkes or Poisson process), the proposed estimator is shown to perform
+                                accurately in estimating both processes.
+                                <br><br>
+                                Keywords: Hawkes process, point process, spectral analysis, parametric estimation, superposition, identifiability.
+                            </p>
+                        </div>
                     </li>
                     </ul>
                     <p class="subTitle">Published papers</p>
@@ -156,20 +180,57 @@
                     <li>
                         "Inference of multivariate exponential Hawkes processes with inhibition and application to neuronal activity", A. Bonnet, M. Martinez Herrera, M. Sangnier, <i>Statistics and Computing</i>, 2023.                    
                         <br>
+                        <br>
+                        <button class="btn1" onclick="toggleAbstract('abstract2')">Abstract</button>                        
                         <a href="https://hal.science/hal-03652497/document" class="btn3" role="button">Pdf</a>
                         <a href="https://github.com/migmtz/multivariate-hawkes-inhibition" class="btn3" role="button">Github</a>
+                        <div id="abstract2" class="abstract" style="display: none; margin-top: 10px;">
+                            <p>
+                                The multivariate Hawkes process is a past-dependent point process used to model the
+                                relationship of event occurrences between different phenomena. Although the Hawkes process
+                                was originally introduced to describe excitation effects, which means that one event increases
+                                the chances of another occurring, there has been a growing interest in modelling the opposite
+                                effect, known as inhibition. In this paper, we focus on how to infer the parameters of a
+                                multidimensional exponential Hawkes process with both excitation and inhibition effects. Our
+                                first result is to prove the identifiability of this model under a few sufficient assumptions. Then
+                                we propose a maximum likelihood approach to estimate the interaction functions, which is,
+                                to the best of our knowledge, the first exact inference procedure in the frequentist framework.
+                                Our method includes a variable selection step in order to recover the support of interactions
+                                and therefore to infer the connectivity graph. A benefit of our method is to provide an explicit
+                                computation of the log-likelihood, which enables in addition to perform a goodness-of-fit test
+                                for assessing the quality of estimations. We compare our method to standard approaches,
+                                which were developed in the linear framework and are not specifically designed for handling
+                                inhibiting effects. We show that the proposed estimator performs better on synthetic data
+                                than alternative approaches. We also illustrate the application of our procedure to a neuronal
+                                activity dataset, which highlights the presence of both exciting and inhibiting effects between
+                                neurons.
+                                <br><br>
+                                Keywords: Non-linear Hawkes process, point process, maximum likelihood estimation,
+                                identifiability, support recovery, goodness-of-fit.                                
+                            </p>
+                        </div>
                     </li>
                     <br>
                     <li>
                         "Maximum Likelihood Estimation for Hawkes Processes with self-excitation or inhibition", A. Bonnet, M. Martinez Herrera, M. Sangnier, <i>Statistics and Probability Letters</i>, 2021.
                         <br>
+                        <br>
+                        <button class="btn1" onclick="toggleAbstract('abstract3')">Abstract</button>
                         <a href="https://hal.sorbonne-universite.fr/hal-03161843/document" class="btn3" role="button">Pdf</a>
                         <a href="https://github.com/migmtz/hawkes-inhibition-expon" class="btn3" role="button">Github</a>
+                        <div id="abstract3" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                                In this paper, we present a maximum likelihood method for estimating the parameters of a
+                                univariate Hawkes process with self-excitation or inhibition. Our work generalizes techniques and
+                                results that were restricted to the self-exciting scenario. The proposed estimator is implemented
+                                for the classical exponential kernel and we show that, in the inhibition context, our procedure
+                                provides more accurate estimations than current alternative approaches.
+                            </p>
+                        </div>
                     </li>
                     </ul>
                 </div>
             
-
                 <div class="itemRightImage">
                     <img src="branching_and_cluster.jpg" class="imgRight">
                     <p class="imgDesc">Structures of branching and clustering for Hawkes processes.</p>
@@ -301,7 +362,7 @@
         -->
 
         <div class="footer">
-            <div class="block blockPadding greyZone" style="height: 150px;">
+            <div class="block blockPadding greyZone" style="height: 150px; display: flex; align-items: center; justify-content: space-between;">
                 <div class="item">
                     <p class="title">Miguel<br>Martinez Herrera</p>
                     <p class="subTitle">PhD student</p>
@@ -360,6 +421,18 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
+        const menu = document.getElementById('menu');
+    
+        // Ajouter la classe 'collapsed' par défaut
+        menu.classList.add('collapsed');
+    
+        // Optionnel : retirer la classe au clic si besoin pour garder le menu ouvert
+        menu.addEventListener('mouseleave', function() {
+            menu.classList.add('collapsed');
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
         // Sélectionner tous les liens dans le menu
         const links = document.querySelectorAll('#menu a');
 
@@ -387,4 +460,13 @@
             });
         });
     });
+
+    function toggleAbstract(id) {
+        const abstract = document.getElementById(id);
+        if (abstract.style.display === "none") {
+            abstract.style.display = "block";
+        } else {
+            abstract.style.display = "none";
+        }
+    }
 </script>

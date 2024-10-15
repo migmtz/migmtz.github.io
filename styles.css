@@ -1,3 +1,4 @@
+
 /*référentiel, rien d'utile*/
 .Palette {
     color: #879499;
@@ -290,10 +291,10 @@ nav#menu {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
     height: 100%;
     background-color: #333;
     padding-top: 20px;
+    transition: width 0.3s ease; /* Transition douce pour ouverture/fermeture */
 }
 
 nav#menu ul {
@@ -316,9 +317,45 @@ nav#menu ul li a:hover {
     background-color: #575757;
 }
 
+/* Style pour le menu réduit */
+nav#menu.collapsed {
+    width: 60px; /* Réduire la taille à une icône */
+}
+
+nav#menu.collapsed ul {
+    display: none; /* Cacher le contenu du menu */
+}
+
+nav#menu.collapsed:hover {
+    width: 200px; /* Ouvrir le menu au survol */
+}
+
+nav#menu.collapsed:hover ul {
+    display: block; /* Afficher le contenu du menu au survol */
+}
+
+nav#menu ul li a {
+    white-space: nowrap; /* Éviter la coupure des textes */
+}
+
 .section {
-    margin-left: 200px; /* espace pour le menu latéral */
+    margin-left: 0; /* espace pour le menu latéral */
 } 
+
+.section ul li {
+    margin-bottom: 10px; /* Ajoute un espace de 10px entre chaque élément de liste */
+}
+
+.abstract {
+    background-color: #f9f9f9; /* Fond légèrement gris */
+    border-left: 4px solid  #ff4b01; /* Bordure colorée sur le côté gauche */
+    padding: 10px 15px; /* Espacement intérieur */
+    margin-top: 10px; /* Espace au-dessus du paragraphe */
+    font-style: italic; /* Texte en italique */
+    color: #333; /* Couleur du texte */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre pour effet de relief */
+}
+
 
 /* Pour les écrans étroits (comme les téléphones) */
 @media screen and (max-width: 800px) {
