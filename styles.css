@@ -294,7 +294,7 @@ nav#menu {
     height: 100%;
     background-color: #333;
     padding-top: 20px;
-    transition: width 0.3s ease; /* Transition douce pour ouverture/fermeture */
+    transition: width 0.4s ease, background-color 0.4s ease; /* Ajoute une transition fluide */
 }
 
 nav#menu ul {
@@ -317,21 +317,34 @@ nav#menu ul li a:hover {
     background-color: #575757;
 }
 
-/* Style pour le menu réduit */
+/* Menu collapsed transparent */
 nav#menu.collapsed {
-    width: 60px; /* Réduire la taille à une icône */
+    width: 60px;
+    background-color: transparent;
 }
 
 nav#menu.collapsed ul {
-    display: none; /* Cacher le contenu du menu */
+    display: none; /* Cacher la liste du menu */
+}
+
+/* Ajouter un style pour l'icône visible dans le menu collapsed */
+nav#menu.collapsed::before {
+    content: "\f0c9";
+    font-family: "FontAwesome";
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
 }
 
 nav#menu.collapsed:hover {
-    width: 200px; /* Ouvrir le menu au survol */
+    width: 200px; /* Le menu s'ouvre au survol */
+    background-color: #333; /* Couleur de fond visible quand le menu s'ouvre */
 }
 
 nav#menu.collapsed:hover ul {
-    display: block; /* Afficher le contenu du menu au survol */
+    display: block; /* Afficher le contenu au survol */
 }
 
 nav#menu ul li a {
@@ -355,7 +368,6 @@ nav#menu ul li a {
     color: #333; /* Couleur du texte */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre pour effet de relief */
 }
-
 
 /* Pour les écrans étroits (comme les téléphones) */
 @media screen and (max-width: 800px) {
