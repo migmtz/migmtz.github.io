@@ -156,6 +156,11 @@ a[href^="mailto:"] {
     text-decoration: none;
 }
 
+a[href$=".pdf"] {
+    color: #faa000;
+    text-decoration: none;
+}
+
 /* on retire le style par défaut des boutons */
 button,
 input[type="button"],
@@ -234,6 +239,40 @@ input[type="reset"] {
     width: 60px;
 
     font-size: small;
+}
+
+.btn3 {
+    background-color: #3e4749;
+    border-color: #3e4749;
+    color: white;
+
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+
+    height: 20px;
+    width: 60px;
+
+    font-size: small;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn3:hover {
+    background-color:#8794992a;
+    border-color:#3e4749;
+    color: #3e4749;
+
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+
+    height: 20px;
+    width: 60px;
+
+    font-size: small;
+    display: inline-block;
+    text-align: center;
 }
 
 a.btn3 {
