@@ -55,7 +55,7 @@
 
                 <div class="item textCenter">
                     <h1>Miguel Martinez Herrera<h1>
-                    <h3>PhD in Statistics</h3>                  
+                    <h3>Postdoctoral researcher<br>in Spatial statistics</h3>                  
                 </div>
 
                 <div class="item textRight">
@@ -108,7 +108,7 @@
 
             <div class="textCenter">
                 <h2>Miguel Martinez Herrera<h1>
-                <h3>PhD in Statistics</h3>
+                <h3>Postdoctoral researcher<br>in Spatial statistics</h3>
                 <!--<p>
                    at Laboratoire de Probabilités, Statistique et Modélisation (LPSM),
                    <br>
@@ -120,16 +120,27 @@
 
         <!-- Module DE BIO : full text + séparators -->
         <div id="bio">                
-            <div class="block blockPadding" style="text-align:center;">
+            <div class="block blockPadding" style="text-align:justify;    text-justify: auto;
+            ">
                 <div class="bio">
-                <p class="subTitle">Who am I, you ask?</p>
+                <p class="subTitle" style="text-align:center;">Who am I, you ask?</p>
                 <div class="titleSeparator" style="margin:auto;"></div>
                 <p>
+                    I am a CNRS postdoctoral researcher working in the team of <a href="https://research.pasteur.fr/fr/team/zebrafish-neurogenetics/">Zebrafish neurogenetics</a> at Institut Pasteur
+                    under the supervision of <a href="https://research.pasteur.fr/en/member/nicolas-dray/">Nicolas Dray</a>, 
+                    and <a href="https://fcheysson.github.io/">Felix Cheysson</a> from Gustave Eiffel university.
+                    <br><br>
+                    My research focuses on the development of new statistical methods, based on the spectral analysis of spatial point processes, 
+                    to study the organisation of Neural Stem Cells (NSCs) populations at different scales.
+                    <br>
+                    In particular, we study the role of Notch signalling in NSC quiescence and division, which is a biological mechanism that helps guaranteeing 
+                    a stable composition of cell numbers and types in the tissue.                    
+
+                    <br><br><br>
                     I recently completed my PhD in statistics in the department of statistics (LPSM) at Sorbonne Université, 
                     financed by the Sorbonne Center for Artificial Intelligence (<a href="https://scai.sorbonne-universite.fr">SCAI</a>),
                     under the supervision of <a href="https://annabonnet.github.io/">Anna Bonnet</a> (LPSM) and <a href="https://perso.lpsm.paris/~msangnier/">Maxime Sangnier</a> (LPSM).
-
-                    <br><br>
+                    <br>
                     My thesis subject is the study of parametric statistical inference for Hawkes processes: 
                     <ul>
                     <li>
@@ -155,7 +166,7 @@
                     <p class="subTitle">Preprints</p>
                     <ul>
                     <li>
-                        "Spectral analysis for noisy Hawkes processes inference", A. Bonnet, F. Cheysson, M. Martinez Herrera, M. Sangnier, <i>In Revision</i>, (2024).
+                        "<b>Spectral analysis for noisy Hawkes processes inference</b>", A. Bonnet, F. Cheysson, M. Martinez Herrera, M. Sangnier, <i>In Revision</i>, (2024).
                         <!--<button class="btn2">abstract</button>-->
                         <br>
                         <br>
@@ -188,7 +199,7 @@
                     <p class="subTitle">Published papers</p>
                     <ul>
                     <li>
-                        "Inference of multivariate exponential Hawkes processes with inhibition and application to neuronal activity", A. Bonnet, M. Martinez Herrera, M. Sangnier, <i>Statistics and Computing</i>, (2023).                    
+                        "<b>Inference of multivariate exponential Hawkes processes with inhibition and application to neuronal activity</b>", A. Bonnet, M. Martinez Herrera, M. Sangnier, <i>Statistics and Computing</i>, (2023).                    
                         <br>
                         <br>
                         <button class="btn3" onclick="toggleAbstract('abstract2')">Abstract</button>                        
@@ -222,7 +233,7 @@
                     </li>
                     <br>
                     <li>
-                        "Maximum Likelihood Estimation for Hawkes Processes with self-excitation or inhibition", A. Bonnet, M. Martinez Herrera, M. Sangnier, <i>Statistics and Probability Letters</i>, (2021).
+                        "<b>Maximum Likelihood Estimation for Hawkes Processes with self-excitation or inhibition</b>", A. Bonnet, M. Martinez Herrera, M. Sangnier, <i>Statistics and Probability Letters</i>, (2021).
                         <br>
                         <br>
                         <button class="btn3" onclick="toggleAbstract('abstract3')">Abstract</button>
@@ -243,11 +254,38 @@
                     <p class="subTitle">PhD thesis</p>
                     <ul>
                     <li>
-                        "Inference of non-linear or imperfectly observed Hawkes processes", defended on the 12th November 2024.
+                        "<b>Inference of non-linear or imperfectly observed Hawkes processes</b></b>", defended on the 12th November 2024.
                         <br>
                         <br>
+                        <button class="btn3" onclick="toggleAbstract('abstract4')">Abstract</button>
+                        <a href="thesis.pdf" class="btn3" role="button" target="_blank">Pdf</a>
                         <a href="thesis_presentation.pdf" class="btn3" role="button" target="_blank">Slides</a>
-
+                        <div id="abstract4" class="abstract"  style="display: none; margin-top: 10px;">
+                            <p>
+                                The Hawkes point process is a popular statistical tool to analyse temporal patterns. Modern applications
+                                propose extensions of this model to account for specificities in each field of study, which in turn complex-
+                                ifies the task of inference. In this thesis, we advance different approaches for the parametric estimation of
+                                twosubmodelsoftheHawkesprocessinunivariateandmultivariatesettings. Motivatedbythemodelling
+                                of complex neuronal interactions observed from spike train data, our first study focuses on accounting
+                                for both inhibition and excitation effects between neurons, modelled by the non-linear Hawkes process.
+                                We derive a closed-form expression of the log-likelihood in order to implement a maximum likelihood
+                                procedure. As a consequence of our approach, we gain access to a goodness-of-fit scheme allowing us
+                                to establish ad hoc model selection methods to estimate the interaction network in the multivariate
+                                setting. The second part of this thesis focuses on studying Hawkes process data noised by two different
+                                alterations: adding or removing points. The absence of knowledge on the noise dynamics makes classical
+                                inference procedures intractable or computationally expensive. Our solution is to leverage the spectral
+                                analysis of point processes to establish an estimator obtained by maximising the spectral log-likelihood.
+                                By deriving the spectral densities of the noised processes and by establishing identifiability conditions
+                                on our model, we show that the spectral inference method does not necessitate any information on the
+                                structure of the noise, effectively circumventing this issue. An additional result of the study of Hawkes
+                                processes with missing points is that it gives access to a subsampling paradigm to enhance the estima-
+                                tion methods by introducing a penalisation parameter. We illustrate the efficiency of all of our methods
+                                through reproducible numerical implementations.
+                                <br><br>
+                                Keywords: Hawkes processes, parametric inference, identifiability, inhibition, spectral theory, neuronal
+                                data.
+                            </p>
+                        </div>
                     </li>
                     </ul>
                 </div>
@@ -386,7 +424,7 @@
             <div class="block blockPadding greyZone" style="height: 150px; display: flex; align-items: center; justify-content: space-between;">
                 <div class="item">
                     <p class="title">Miguel<br>Martinez Herrera</p>
-                    <p class="subTitle">PhD in Statistics</p>
+                    <p class="subTitle">Postdoctoral researcher</p>
                     <p class="credits">Created by 
                         <a href="https://github.com/Gelero91">
                             GLR
@@ -414,7 +452,7 @@
             <div class="block blockPadding greyZone" style="display: flex;">
                 <div class="textLeft" style="width:50%;">
                     <p class="title">Miguel Martinez Herrera</p>
-                    <p class="subTitle">PhD in Statistics</p>
+                    <p class="subTitle">Postdoctoral researcher</p>
                     <p class="credits">Created by 
                         <a href="https://github.com/Gelero91">
                             GLR

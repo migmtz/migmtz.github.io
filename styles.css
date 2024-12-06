@@ -1,4 +1,3 @@
-
 /*référentiel, rien d'utile*/
 .Palette {
     color: #879499;
@@ -10,8 +9,8 @@
 .Palette2 {
     color: #879499;
     color: #3e4749;
-    color: #fd0942c8;
-    color: #FD0941;
+    color: #fd0942c0;
+    color: #ff4b01;
 }
 
 /*Les icônes fonctionnes grâce à un système de classe
@@ -32,6 +31,7 @@ mais je veux que ça reste lisible*/
 body,
 html {
     font-family: 'Lato', sans-serif;
+    font-size: large;
     color: #3e4749;
     margin: 0;
     padding: 0;
