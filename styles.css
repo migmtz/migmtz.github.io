@@ -1,22 +1,12 @@
-/*référentiel, rien d'utile*/
-.Palette {
-    color: #879499;
-    color: #3e4749;
-    color: #faa000;
-    color: #ff4b01;
-}
+/* Palette de couleurs du site :
+    Gris clair  : #879499
+    Gris foncé  : #3e4749
+    Jaune       : #faa000
+    Orange      : #ff4b01
+*/
 
-.Palette2 {
-    color: #879499;
-    color: #3e4749;
-    color: #fd0942c0;
-    color: #ff4b01;
-}
-
-/*Les icônes fonctionnes grâce à un système de classe
-je le contourne en utilisant une ID à la place.
-j'aurai pu ajouter une nouvelle classe, 
-mais je veux que ça reste lisible*/
+/* Les icônes utilisent une classe dédiée .icon
+plutôt que les classes générées par FontAwesome */
 .icon {
     width: 20px;
 }
@@ -24,6 +14,8 @@ mais je veux que ça reste lisible*/
 .orcid-icon {
     width: 16px;
     height: 16px;
+    margin-right: 0;
+    margin-left: 4px;
     filter: invert(24%) sepia(2%) saturate(2829%) hue-rotate(152deg) brightness(94%) contrast(85%);
 }
 
@@ -70,14 +62,39 @@ html {
     flex-direction: column;
 }
 
-.itemLeftPortrait {
+/* Classes dédiées au header desktop — trois colonnes symétriques */
+.headerPhoto {
+    width: 33%;
     margin: 2%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     position: relative;
-    z-index: 1; /* Ensures images stay below the menu */
+    z-index: 1;
+}
+
+.headerTitle {
+    width: 33%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.headerContact {
+    width: 33%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerContact .textRight {
+    width: 160px; /* Compense les protubérances des icônes autour de la photo (+10px de chaque côté) */
 }
 
 .photo-container {
@@ -119,14 +136,11 @@ html {
     margin-bottom: 2%;
 }
 
-.whiteZone {
-    background-color: rgb(255, 255, 255);
-}
+/* .whiteZone : utilitaire disponible si besoin, le blanc étant la couleur de fond par défaut */
+/* .whiteZone { background-color: white; } */
 
 .greyZone {
-    background-color: #8794992a;
     background-color: #8794991d;
-
 }
 
 .textRight {
@@ -139,6 +153,11 @@ html {
 
 .textLeft {
     text-align: left;
+}
+
+.textJustify {
+    text-align: justify;
+    text-justify: auto;
 }
 
 .title {
@@ -168,10 +187,9 @@ html {
     border-bottom-color:#3e474980;
 }
 
-.imgExemple {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+/* Variante centrée du séparateur */
+.titleSeparatorCentered {
+    margin: auto;
 }
 
 .imgRight {
@@ -181,16 +199,8 @@ html {
 }
 
 /* modification du style par défaut des URL */
-a[href^="http"] {
-    color: #faa000;
-    text-decoration: none;
-}
-
-a[href^="mailto:"] {
-    color: #faa000;
-    text-decoration: none;
-}
-
+a[href^="http"],
+a[href^="mailto:"],
 a[href$=".pdf"] {
     color: #faa000;
     text-decoration: none;
@@ -208,140 +218,72 @@ input[type="reset"] {
     margin: 0;
 }
 
-.btn1, .btn2, .btn3 {
+/* Base commune à tous les boutons */
+.btn1, .btn2, .btn3, a.btn3 {
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    height: 20px;
+    width: 60px;
+    font-size: small;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-.btn1:hover, .btn2:hover, .btn3:hover {
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
+/* Variante : contour orange (btn1) */
 .btn1 {
     background-color: white;
     border-color: #ff4b01;
     color: #ff4b01;
-
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 2px;
-
-    height: 20px;
-    width: 60px;
-
-    font-size: small;
 }
 
 .btn1:hover {
     background-color: #ff4b01;
     border-color: #ff4b01;
     color: white;
-
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 2px;
-
-    height: 20px;
-    width: 60px;
-
-    font-size: small;
 }
 
+/* Variante : plein orange (btn2) */
 .btn2 {
-    background-color: #ff4b01;;
-    border-color: #ff4b01;;
+    background-color: #ff4b01;
+    border-color: #ff4b01;
     color: white;
-
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 2px;
-
-    height: 20px;
-    width: 60px;
-
-    font-size: small;
 }
 
 .btn2:hover {
     background-color: white;
-    border-color:  #ff4b01;
-    color:  #ff4b01;;
-
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 2px;
-
-    height: 20px;
-    width: 60px;
-
-    font-size: small;
+    border-color: #ff4b01;
+    color: #ff4b01;
 }
 
+/* Variante : plein gris foncé (btn3) */
 .btn3 {
     background-color: #3e4749;
     border-color: #3e4749;
     color: white;
-
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 2px;
-
-    height: 20px;
-    width: 60px;
-
-    font-size: small;
     display: inline-block;
     text-align: center;
 }
 
 .btn3:hover {
-    background-color:#8794992a;
-    border-color:#3e4749;
+    background-color: #8794992a;
+    border-color: #3e4749;
     color: #3e4749;
-
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 2px;
-
-    height: 20px;
-    width: 60px;
-
-    font-size: small;
-    display: inline-block;
-    text-align: center;
 }
 
+/* Rustine pour les <a class="btn3"> — hauteur différente du <button> */
 a.btn3 {
+    height: 16px;
     background-color: #3e4749;
     border-color: #3e4749;
     color: white;
-
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 2px;
-
-    height: 16px;
-    width: 60px;
-
-    font-size: small;
     display: inline-block;
     text-align: center;
 }
 
 a.btn3:hover {
-    background-color:#8794992a;
-    border-color:#3e4749;
+    background-color: #8794992a;
+    border-color: #3e4749;
     color: #3e4749;
-
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 2px;
-
-    height: 16px;
-    width: 60px;
-
-    font-size: small;
-    display: inline-block;
-    text-align: center;
 }
 
 .header {
@@ -354,6 +296,14 @@ a.btn3:hover {
 
 .footer {
     display: block;
+}
+
+/* Mise en page intérieure du footer desktop */
+.footerDesktopContent {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .responsiveFooter {
@@ -385,7 +335,9 @@ nav#menu ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
+    padding-left: 20px;
     display: block;
+    white-space: nowrap;
 }
 
 nav#menu ul li a:hover {
@@ -422,13 +374,8 @@ nav#menu.collapsed:hover ul {
     display: block; /* Afficher le contenu au survol */
 }
 
-nav#menu ul li a {
-    white-space: nowrap; /* Éviter la coupure des textes */
-}
-
-.section {
-    margin-left: 0; /* espace pour le menu latéral */
-} 
+/* .section : placeholder prévu si un margin-left est nécessaire pour le menu latéral */
+/* .section { margin-left: 0; } */
 
 .section ul li {
     margin-bottom: 10px; /* Ajoute un espace de 10px entre chaque élément de liste */
