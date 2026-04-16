@@ -17,7 +17,7 @@
 je le contourne en utilisant une ID à la place.
 j'aurai pu ajouter une nouvelle classe, 
 mais je veux que ça reste lisible*/
-#icon {
+.icon {
     width: 20px;
 }
 

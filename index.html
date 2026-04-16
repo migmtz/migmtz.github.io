@@ -62,24 +62,34 @@
                 </div>
 
                 <div class="item textCenter">
-                    <h1>Miguel Martinez Herrera<h1>
+                    <h1>Miguel Martinez Herrera</h1>
                     <h3>Postdoctoral researcher<br>in Spatial statistics</h3>                  
                 </div>
-
-                <div class="item textRight">
-                    <p>Paris, France</p>
-                    <a href="mailto: miguel.martinez-herrera@pasteur.fr">
-                        Mail
-                    </a><i id="icon" class="fa fa-envelope"></i>
-                    <br>
-                    <a href="https://orcid.org/0000-0001-7844-4064">
-                        Orcid            
-                    </a><svg class="orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="margin-right :0px; margin-left:4px;"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
-                    <br>
-                    <a href="https://github.com/migmtz">
-                        Github 
-                    </a><i id="icon" class="fa fa-github"></i>
-                </div>
+                
+                    <div class="item" style="    
+                        margin: 2%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
+                        ">
+                        <!--on donne la même dimension que la largeur de la photo pour avoir le même comportement des deux côtés-->
+                        <!--la photo a deux protubérances de chaque côté (icones) - compense avec +10px (150 de diamètre pour la photo)-->
+                        <div class="textRight" style="width: 160px;">
+                            <p>Paris, France</p>
+                            <a href="mailto: miguel.martinez-herrera@pasteur.fr">
+                                Mail
+                            </a><i class="icon fa fa-envelope"></i>
+                            <br>
+                            <a href="https://orcid.org/0000-0001-7844-4064">
+                                Orcid            
+                            </a><svg class="orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="margin-right :0px; margin-left:4px;"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg>
+                            <br>
+                            <a href="https://github.com/migmtz">
+                                Github 
+                            </a><i class="icon fa fa-github"></i>
+                        </div>
+                    </div>
             </div>
             <!--<div class="textCenter">
                 <p>at Laboratoire de Probabilités, Statistique et Modélisation (LPSM),
@@ -111,7 +121,7 @@
                         <p>Paris, France</p>
                         <a href="mailto: miguel.martinez-herrera@pasteur.fr">
                             Mail
-                        </a><i id="icon" class="fa fa-envelope"></i>
+                        </a><i class="icon fa fa-envelope"></i>
                         <br>
                         <a href="https://orcid.org/0000-0001-7844-4064">
                             Orcid            
@@ -119,12 +129,12 @@
                         <br>
                         <a href="https://github.com/migmtz">
                             Github 
-                        </a><i id="icon" class="fa fa-github"></i>
+                        </a><i class="icon fa fa-github"></i>
                     </div>
                 </div>
 
             <div class="textCenter">
-                <h2>Miguel Martinez Herrera<h1>
+                <h2>Miguel Martinez Herrera</h2>
                 <h3>Postdoctoral researcher<br>in Spatial statistics</h3>
                 <!--<p>
                    at Laboratoire de Probabilités, Statistique et Modélisation (LPSM),
@@ -186,10 +196,10 @@
                         "<b>Ridge-penalised spectral least-squares estimation for point processes</b>", M. Martinez Herrera, F. Cheysson, <i>Preprint at ArXiv:2601.07490</i>, (2026).
                         <!--<button class="btn2">abstract</button>-->
                         <br>
-                        <button class="btn3" onclick="toggleAbstract('abstractn3icd')">Abstract</button>
+                        <button class="btn3" onclick="toggleAbstract('abstractRidge')">Abstract</button>
                         <a href="https://arxiv.org/abs/2601.07490" class="btn3" role="button">Pdf</a>
                         <!--<a href="https://github.com/migmtz/spatialN3ICD" class="btn3" role="button">Github</a>-->
-                        <div id="abstractn3icd" class="abstract"  style="display: none; margin-top: 10px;">
+                        <div id="abstractRidge" class="abstract"  style="display: none; margin-top: 10px;">
                             <p>
                                 Penalised estimation methods for point processes usually rely on a large amount of independent repetitions for cross-validation purposes. 
                                 However, in the case of a single realisation of the process, existing cross-validation methods may be impractical depending on the chosen model. 
@@ -210,10 +220,10 @@
                         "<b>Jagged-mediated lateral induction patterns Notch3 signaling within adult neural stem cell populations</b>", S. Ortica, M. Martinez Herrera, L. Degroux, B. Rochette, N. Dray, L. Bally-Cuif, <i>Accepted in Nature Communications</i>, (2026).
                         <!--<button class="btn2">abstract</button>-->
                         <br>
-                        <button class="btn3" onclick="toggleAbstract('abstractn3icd')">Abstract</button>
+                        <button class="btn3" onclick="toggleAbstract('abstractN3ICD')">Abstract</button>
                         <a href="https://www.biorxiv.org/content/10.1101/2025.07.29.667421v1" class="btn3" role="button">Pdf</a>
                         <a href="https://github.com/migmtz/spatialN3ICD" class="btn3" role="button">Github</a>
-                        <div id="abstractn3icd" class="abstract"  style="display: none; margin-top: 10px;">
+                        <div id="abstractN3ICD" class="abstract"  style="display: none; margin-top: 10px;">
                             <p>
                                 In the adult brain, Notch3 signaling promotes neural stem cell (NSC) quiescence and stemness.
                                 It remains unknown how Notch3 signaling levels are controlled and relate to these NSC decisions.
@@ -407,8 +417,8 @@
                 </div>
 
                 <div class="itemRightImage">
-                    <img src="bivariate_intensity_hawkes2.jpg" class="imgRight";style="vertical-align: middle;">
-                    <p class="imgDesc";style="vertical-align: middle;">Intensity of bivariate Hawkes process with exciting and inhibiting interactions.</p>
+                    <img src="bivariate_intensity_hawkes2.jpg" class="imgRight" style="vertical-align: middle;">
+                    <p class="imgDesc" style="vertical-align: middle;">Intensity of bivariate Hawkes process with exciting and inhibiting interactions.</p>
                 </div>
             </div>
         </div>
@@ -506,7 +516,7 @@
                     <p>Paris, France</p>
                     <a href="mailto: miguel.martinez-herrera@pasteur.fr">
                         Mail
-                    </a><i id="icon" class="fa fa-envelope"></i>
+                    </a><i class="icon fa fa-envelope"></i>
                     <br>
                     <a href="https://orcid.org/0000-0001-7844-4064">
                         Orcid            
@@ -514,7 +524,7 @@
                     <br>
                     <a href="https://github.com/migmtz">
                         Github 
-                    </a><i id="icon" class="fa fa-github"></i>
+                    </a><i class="icon fa fa-github"></i>
                 </div>
             </div>
         </div>
@@ -535,7 +545,7 @@
                     <p>Paris, France</p>
                     <a href="mailto: miguel.martinez-herrera@pasteur.fr">
                         Mail
-                    </a><i id="icon" class="fa fa-envelope"></i>
+                    </a><i class="icon fa fa-envelope"></i>
                     <br>
                     <a href="https://orcid.org/0000-0001-7844-4064">
                         Orcid            
@@ -543,7 +553,7 @@
                     <br>
                     <a href="https://github.com/migmtz">
                         Github 
-                    </a><i id="icon" class="fa fa-github"></i>
+                    </a><i class="icon fa fa-github"></i>
                 </div>
             </div>
     </div>
